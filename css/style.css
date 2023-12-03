@@ -153,6 +153,7 @@ iframe {
 
 .sum-timing li {
     padding: 10px;
+    font-size: 0.8rem;
 }
 
 /* Banner */
@@ -171,8 +172,8 @@ iframe {
     background-color: white;
     padding: 14px 20px;
     border-radius: 24px;
-    cursor: pointer;
     box-shadow: 0 3px 17px #dcdcdc;
+    text-align: center;
 }
 
 .follow-us span {
@@ -270,7 +271,10 @@ footer a {
 
     .sum-timing li {
         width: calc(100%/3);
-        font-size: 0.9rem;
+    }
+
+    .follow-us li {
+        width: calc(100%/6);
     }
 
     .banner {
@@ -278,7 +282,7 @@ footer a {
     }
 
     .presentation img {
-        width: 40%;
+        width: 45%;
         float: left;
         margin-right: 10px;
     }
