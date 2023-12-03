@@ -12,7 +12,7 @@ body {
 
 .container {
     margin: 0 auto;
-    padding: 1.5rem;
+    width: 90%;  
 }
 
 img {
@@ -49,10 +49,11 @@ header {
 
 h1 {
     font-family: 'Nerko One', cursive;
-    font-size: 4rem;
+    font-size: 3.8rem;
     font-weight: 400;
+    padding: 6px 0;
     color: var(--main_color);
-    padding: 8px;
+    text-shadow: 1px 0 2px gray;
 }
 
 /* Summary Section */
@@ -60,9 +61,17 @@ h4 {
     font-weight: 300;
 }
 
+.extra-info {
+    display: none;
+}
+
+.sum-header {
+    padding: 24px 0;
+}
+
 .sum-header > div {
     justify-content: space-between;
-    padding: 6px 0 24px;
+    padding-top: 6px;
 }
 
 h3 {
@@ -90,12 +99,15 @@ h3 {
 iframe {
     max-width: 100%;
     display: block;
+    width: 560px; 
+    height: 315px;
 }
 
 /* Summary under the video */
 .sum-requirements {
     background-color: #fff;
-    padding: 2rem;
+    padding: 2rem 2rem 3rem;
+    box-shadow: 0px 8px 16px #dedede;
 }
 
 .sum-properties {
@@ -129,8 +141,24 @@ iframe {
     color: black;
 }
 
+.sum-timing {
+    margin: 0 -10px;
+}
+
 .sum-timing ul {
-    line-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sum-timing li {
+    padding: 10px;
+}
+
+/* Banner */
+.banner {
+    display: none;
+    padding-bottom: 3rem;
 }
 
 /* Follow us on socials */
@@ -216,12 +244,46 @@ footer {
 
 footer ul {
     flex-wrap: wrap;
-    gap: 25px;
-}
-
-footer li {
+    gap: 28px;
 }
 
 footer a {
     color: white;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        text-align: left;
+    }
+
+    .extra-info {
+        display: inline-block;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    .sum-timing ul {
+        flex-direction: row;
+    }
+
+    .sum-timing li {
+        width: calc(100%/3);
+        font-size: 0.9rem;
+    }
+
+    .banner {
+        display: block;
+    }
+
+    .presentation img {
+        width: 40%;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .presentation {
+        margin-bottom: 5rem;
+    }
 }
