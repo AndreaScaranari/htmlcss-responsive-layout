@@ -96,11 +96,8 @@ h3 {
 }
 
 /* Video */
-iframe {
-    max-width: 100%;
-    display: block;
-    width: 560px; 
-    height: 315px;
+.sum-video {
+    width: 100%;
 }
 
 /* Summary under the video */
@@ -289,5 +286,44 @@ footer a {
 
     .presentation {
         margin-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .container {
+        width: 70%;
+    }
+
+    .sum-vid-req {
+        display: flex;
+    }
+
+    .sum-video {
+        width: 70%;
+    }
+
+    .sum-requirements {
+        width: 30%;
+    }
+
+    .sum-timing ul {
+        flex-direction: column;
+    }
+
+    .sum-timing li {
+        width: 100%;
+    }
+
+    .follow-us span {
+        display: inline-block;
+        margin-left: 6px;
+    }
+
+    footer.fcc {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
