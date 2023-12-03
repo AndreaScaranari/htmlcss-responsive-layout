@@ -51,7 +51,7 @@ h1 {
     font-family: 'Nerko One', cursive;
     font-size: 3.8rem;
     font-weight: 400;
-    padding: 6px 0;
+    padding: 6px 1rem;
     color: var(--main_color);
     text-shadow: 1px 0 2px gray;
 }
