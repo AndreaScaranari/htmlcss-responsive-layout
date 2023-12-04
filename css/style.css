@@ -97,6 +97,14 @@ h3 {
 
 /* Video */
 .sum-video {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+iframe {
+    height: 50vw;
     width: 100%;
 }
 
@@ -256,10 +264,6 @@ footer a {
 
     .extra-info {
         display: inline-block;
-    }
-
-    iframe {
-        width: 100%;
     }
 
     .sum-timing ul {
